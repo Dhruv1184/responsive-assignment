@@ -18,8 +18,10 @@
 }
 .list1{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 20px;
+    flex-wrap: wrap;
 }
 .img1{
     height: 300px;
@@ -105,4 +107,63 @@ h1{
     height: 200px;
     width: 200px;
     border-radius: 100px;
+}
+@media (max-width: 600px){
+    .list1,.list2,.list3{
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        align-items: center;
+    }
+    .book1,.game1,.item1{
+        margin: 20px;
+    }
+   .genra{
+    text-align: center;
+    margin: 40px;
+   }
+   .bookimg,.gameimg,.itemimg{
+    height: 300px;
+    width: 300px;
+   }
+   .maincontent{
+    font-size: 40px;
+    
+    position: absolute;
+    left: 10px;
+   }
+   .maincon{
+    margin-top: 50px;
+    position: absolute;
+    left: 10px;
+    top: 200px;
+   }
+   .main{
+    height: 200px;
+   }
+   .profile{
+    height: 100px;
+    width: 100px;
+   }
+   h1{
+    font-size: 30px;
+   }
+   .profileimg{
+    margin-left: -50px;
+   }
+   .data{
+    margin-right: -100px;
+   }
+   .footer{
+    justify-content: space-between;
+   }
+   button{
+    height: 40px;
+    width: 100px;
+   }
+   .whitecart{
+    height: 25px;
+    width: 25px;
+   }
+   
 }
